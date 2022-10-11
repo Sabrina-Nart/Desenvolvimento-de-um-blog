@@ -1,0 +1,131 @@
+﻿<!DOCTYPE html>
+
+<html lang="pt-br">
+
+	<head>
+		<title>blogdasah-Formulario</title>
+		<style type="text/css">
+			body {
+				font-family: arial;
+				margin-left: 150px;
+				margin-right: 184px;
+				margin-top: 7px;
+				margin-bottom: 7px;
+			}
+			
+			header {
+				margin-left: 420px;
+			}
+			
+			nav {
+				background: #FFBBFF;
+				width: 100%;	
+				padding: 10px 10px;
+			}
+			
+			.formulario {
+				background: #FFF5EE;
+				height: 880px;
+				width: 100%;	
+				padding: 3px 5px 20px 20px;
+			}
+			
+			span {
+				font-weight: bold;
+			}
+			
+			input {
+				border: 2px solid #D02090;
+			}
+		
+			fieldset {
+				border: 2px solid #D02090;
+				width: 300px;
+			}
+			
+			button:hover {
+				border: 2px solid;
+				padding: 5px 10px;
+			}
+			
+			footer {
+				background: #FFBBFF;
+				width: 100%;	
+				padding: 10px 10px;
+			}
+		</style>
+	</head>
+	
+	<body>
+		<header>
+			<img src="../img/blog.png" alt="Logo">
+		</header>
+
+		<nav>
+			<a href="../TrabalhoWebHome/TrabalhoWebHome.html" target="_blank">PÁGINA INICAL -</a>
+			<a href="../TrabalhoWebSobreMim/TrabalhoWebSobreMim.html" target="_blank">Sobre o blog da sah</a>
+		</nav>
+		
+		<div class="formulario"> 
+			<form action="contato@meusite.com.br" method="post" enctype="text/plain">
+				<h2>Formulário de Contato</h2>
+				
+				<label for="nome"><span>Nome</span></label><br>
+				<input type="text" name="nome" id="nome"><br><br>
+					
+				<label for="email"><span>E-mail</span></label><br>
+				<input type="text" name="email" id="email"><br><br>
+				
+				<label for="empresa"><span>Empresa</span></label><br>
+				<input type="text" name="empresa" id="empresa"><br><br>
+
+				<label for="telefone"><span>Telefone</span></label><br>
+				<input type="text" name="telefone" id="telefone" maxlength="10"><br><br>
+			
+				<label for="celular"><span>Celular</span></label><br>
+				<input type="text" name="celular" id="celular" maxlength="11"><br><br>
+		
+				<label for="Assunto"><span>Assunto</span></label><br>
+				<textarea name="assunto" id="assunto" rows="10" cols="100">Assunto</textarea><br><br>
+				
+				<fieldset> 
+					<legend><span>Forma de Contato</span></legend>
+						
+					<input type="radio" name="contaEmail" value="contaEmail" checked="checked">
+					<label for="contaEmail">E-mail</label>
+					
+					<input type="radio" name="contatoTelefone" value="contatoTelefone">
+					<label for="contatoTelefone">Telefone</label>
+					
+				</fieldset><br><br>
+
+				<label for="horarioContato"><span>Horário de Contato</span></label><br>
+				<select name="horarioContato" multiple="multiple">
+				
+					<option value="manha">Manhã - das 8:00 as 12:00</option>
+					<option value="tarde">Tarde - das 13:00 as 18:00</option>
+					<option value="noite">Noite - das 18:30 as 22:00</option>
+				</select><br><br>
+				
+				<fieldset> 
+					<legend><span>Sexo</span></legend>
+						
+					<input type="radio" name="sexo" value="Masculino" checked="checked">
+					<label for="sexoMasculino">Masculino</label>
+					
+					<input type="radio" name="sexo" value="Feminino">
+					<label for="sexoFeminino">Feminino</label>
+					
+					<input type="radio" name="sexo" value="Outro">
+					<label for="sexoOutro">Outro</label>
+				</fieldset><br><br>
+
+				<button type="submit"><span>Enviar Dados</span></button>
+			</form>
+		</div>
+		
+		<footer>
+			Obrigada por responder ao formulário!
+		</footer>	
+	</body>	
+</html>
